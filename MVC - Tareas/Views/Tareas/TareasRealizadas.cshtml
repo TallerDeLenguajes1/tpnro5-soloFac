@@ -1,0 +1,24 @@
+﻿@using MVC___Tareas.Entidades;
+
+@model List<MVC___Tareas.Entidades.Tarea>
+
+<h1>Tareas Realizadas</h1>
+
+<table class="table table-dark">
+    <tr>
+        <th>ID</th>
+        <th>Descripcion</th>
+        <th>Duracion</th>
+    </tr>
+
+    @foreach (Tarea tareax in Model)
+    {
+        <tr>
+            <td>@tareax.ID</td>
+            <td>@tareax.Descripcion</td>
+            <td>@tareax.Duracion</td>
+        </tr>
+
+    }
+
+</table>
