@@ -1,0 +1,30 @@
+﻿@using MVC___Tareas.Entidades;
+@model List<MVC___Tareas.Entidades.Tarea>
+
+<section id="section-modificar-tarea">
+
+    <table class="table table-dark mytable">
+        <tr>
+            <th>ID</th>
+            <th>Descripcion</th>
+            <th>Duracion</th>
+        </tr>
+        @foreach (Tarea tarea in Model)
+        {
+            <tr>
+                <td>@tarea.ID</td>
+                <td>@tarea.Descripcion</td>
+                <td>@tarea.Duracion</td>
+            </tr>
+        }
+    </table>
+
+    <form asp-action="BorrarTareaDefinitivamente" method="post" class="myform">
+        <p>Ingrese el id de la tarea que quiere borrar</p> <br>
+        <label for="id"></label>
+        <input type="number" id="id" name="id">
+        <input type="submit" value="Modificar" class="btn-success" />
+    </form>
+
+    <
+</section>

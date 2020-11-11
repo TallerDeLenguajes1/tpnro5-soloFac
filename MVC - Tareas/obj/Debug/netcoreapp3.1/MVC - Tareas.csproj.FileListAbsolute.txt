@@ -110,3 +110,4 @@ C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netco
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\TareasRealizadas.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\AltaTarea.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\ModificarTarea.cshtml.g.cs
+C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\BorrarTarea.cshtml.g.cs

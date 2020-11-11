@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -50,11 +51,34 @@ namespace MVC___Tareas.Controllers
         [HttpPost]
         public IActionResult CrearTarea(Tarea nTarea)
         {
+            bool existe = false;
             string mensaje = "";
             if (ModelState.IsValid)
             {
-                mensaje = "Su tarea fue creada";
-                listaTareas.Add(nTarea);
+                foreach (Tarea tarea in listaTareas)
+                {
+                    if (tarea.ID == nTarea.ID)
+                    {
+                        existe = true;
+                    }
+                }
+                foreach (Tarea tarea in tareasRealizadas)
+                {
+                    if (tarea.ID == nTarea.ID)
+                    {
+                        existe = true;
+                    }
+                }
+
+                if (existe == false)
+                {
+                    listaTareas.Add(nTarea);
+                    mensaje = "Su tarea fue creada";
+                }
+                else
+                {
+                    mensaje = "Ya existe ese id para una tarea, intente con otro";
+                }
             }
             else
             {
@@ -85,6 +109,30 @@ namespace MVC___Tareas.Controllers
             else
             {
                 mensaje = "Error al momento de modificar la tarea";
+            }
+
+            return Content(mensaje);
+        }
+
+        public IActionResult BorrarTarea()
+        {
+            return View(listaTareas);
+        }
+
+        [HttpPost]
+        public IActionResult BorrarTareaDefinitivamente(int id)
+        {
+            string mensaje = "";
+            if (id > 0 && id <= listaTareas.Count + tareasRealizadas.Count) //Como controlaria si es un valor valido el id, si 
+                                                                            //constantemente se pueden estar borrando tareas y este 
+                                                                            //criterio de seleccion ya no seria valido
+            {
+                RemoverTareaPorId(listaTareas, id);
+                mensaje = "Su tarea fue eliminada exitosamente";
+            }
+            else
+            {
+                mensaje = "Error al momento de eliminar la tarea";
             }
 
             return Content(mensaje);
