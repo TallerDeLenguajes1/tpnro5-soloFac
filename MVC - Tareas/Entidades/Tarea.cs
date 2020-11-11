@@ -7,15 +7,19 @@ namespace MVC___Tareas.Entidades
 {
     public class Tarea
     {
+        //[Range(0,10)]
         private int iD;
+        //[Required(ErrorMessage = "Tiene que definir una descripcion para la tarea")]
         private string descripcion;
+        //[Range(0, 8)]
         private int duracion;
         
-
+        
+        //[Range(0, 10)]
         public int ID { get => iD; set => iD = value; }
-        [Required(ErrorMessage = "Tiene que definir una descripcion para la tarea")]
+        //[Required(ErrorMessage = "Tiene que definir una descripcion para la tarea")]
         public string Descripcion { get => descripcion; set => descripcion = value; }
-        [Required(ErrorMessage = "La tarea necesita tener una duracion")]
+        //[Range(0, 8)]
         public int Duracion { get => duracion; set => duracion = value; }
 
         public Tarea()

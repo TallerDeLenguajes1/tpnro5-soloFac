@@ -5,12 +5,31 @@
 <header><h1>Organizador de Tareas</h1></header>
 
 <section>
-    <a href=""></a>
 
+    <h1>Tareas Pendientes</h1>
+
+    <table class="table table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Descripcion</th>
+            <th>Duracion</th>
+        </tr>
+
+        @foreach (Tarea tarea in Model)
+        {
+            <tr>
+                <td>@tarea.ID</td>
+                <td>@tarea.Descripcion</td>
+                <td>@tarea.Duracion</td>
+            </tr>
+
+        }
+
+    </table>
 </section>
 
 
 
 
-    
+
 

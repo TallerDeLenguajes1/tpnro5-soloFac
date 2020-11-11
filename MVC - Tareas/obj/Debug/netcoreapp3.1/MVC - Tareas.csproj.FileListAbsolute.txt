@@ -7,8 +7,6 @@ C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netco
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\MVC - Tareas.RazorAssemblyInfo.cache
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\MVC - Tareas.RazorAssemblyInfo.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\MVC - Tareas.RazorCoreGenerate.cache
-C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -110,3 +108,5 @@ C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netco
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\MVC-Tareas.pdb
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\Index.cshtml.g.cs
 C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\TareasRealizadas.cshtml.g.cs
+C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\AltaTarea.cshtml.g.cs
+C:\Users\Franco\Desktop\Repositorios\codebin2#\TPN5\MVC - Tareas\obj\Debug\netcoreapp3.1\Razor\Views\Tareas\ModificarTarea.cshtml.g.cs

@@ -1,0 +1,36 @@
+﻿@using MVC___Tareas.Entidades;
+
+@model List<MVC___Tareas.Entidades.Tarea>
+
+<section id="section-modificar-tarea">
+
+    <table class="table table-dark mytable">
+        <tr>
+            <th>ID</th>
+            <th>Descripcion</th>
+            <th>Duracion</th>
+        </tr>
+        @foreach (Tarea tarea in Model)
+        {
+            <tr>
+                <td>@tarea.ID</td>
+                <td>@tarea.Descripcion</td>
+                <td>@tarea.Duracion</td>
+            </tr>
+        }
+    </table>
+
+    <form asp-action="ModificarEstadoTarea" method="post" class="myform">
+        <p>Ingrese el id de la tarea realizada</p> <br>
+        <label for="id"></label>
+        <input type="number" id="id" name="id">
+        @*Como enviar una lista de checkbo*@
+        @*@foreach (Tarea tarea in Model)
+        {
+            <input class="form-check" type="checkbox" id="@tarea.ID.ToString()" value="@tarea.ID.ToString()" />
+            <label class="form-check" for="@tarea.ID.ToString()"></label>
+        }*@
+        <input type="submit" value="Modificar" class="btn-success" />
+    </form>
+
+</section>
