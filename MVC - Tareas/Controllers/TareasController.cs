@@ -24,11 +24,15 @@ namespace MVC___Tareas.Controllers
         static List<Tarea> tareasRealizadas = new List<Tarea>();
         static List<Tarea> listaTareas = new List<Tarea>();
 
+
         public IActionResult Index()
         {
-            listaTareas = Helper.GenerarListaTareasAleatorias(20);
+            if (listaTareas.Count == 0)
+            {
+                listaTareas = Helper.GenerarListaTareasAleatorias(20);
 
-            DeterminarEstadoTarea(listaTareas);
+                DeterminarEstadoTarea(listaTareas);
+            }
 
             return View(listaTareas);
         }
@@ -72,7 +76,8 @@ namespace MVC___Tareas.Controllers
             if (id > 0 && id <= listaTareas.Count + tareasRealizadas.Count)
             {
                 mensaje = "Su tarea fue modificada";
-                Tarea tareaMod = Helper.BusquedaPorId(listaTareas, id);
+                Tarea tareaMod = new Tarea();
+                tareaMod = Helper.BusquedaPorId(listaTareas, id);
                 tareasRealizadas.Add(tareaMod);
 
                 RemoverTareaPorId(listaTareas, id);
@@ -84,7 +89,6 @@ namespace MVC___Tareas.Controllers
 
             return Content(mensaje);
         }
-
 
 
         public void DeterminarEstadoTarea(List<Tarea> listaTareas)
@@ -100,6 +104,7 @@ namespace MVC___Tareas.Controllers
                 
             }
         }
+
 
         public bool TareaFueRealizada()
         {
